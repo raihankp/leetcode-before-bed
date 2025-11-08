@@ -19,6 +19,7 @@ class Solution:
 
         for string in strs:
             characterCount = [0] * 26
+            
             for character in string:
                 characterIndex = ord(character) - ord("a")      # if the char is a, it will be 0, if the char is z, it will be 25
                 characterCount[characterIndex] += 1 
