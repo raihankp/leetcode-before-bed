@@ -14,6 +14,7 @@ class Solution:
         # Better Solution:
         # Rather than using frozen set as the key, we could use a list with length of 26 where each of the value is 0, then when we iterate through the strs, we would set the list with the count of occurences of each character.
         # For example, "acea" will have the list as "20101000000000000000000000"
+        # Time complexity would be O(m*n) where n is the strs length and m is number of character in the looped string
 
         setAnagram = defaultdict(list)  # so we could just append it without initializing it as array again
 
