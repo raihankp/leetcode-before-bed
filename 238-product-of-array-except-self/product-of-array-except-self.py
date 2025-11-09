@@ -16,6 +16,7 @@ class Solution:
         # Prefix = [1,-1,-1,0,0]
         # Suffix = [0,0,-9,3,1]
         # Result = [0,0,9,0,0]
+        
         numsLength = len(nums)
         prefixProduct = [1] * numsLength
         suffixProduct = [1] * numsLength
