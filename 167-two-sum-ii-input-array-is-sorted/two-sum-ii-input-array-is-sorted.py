@@ -6,21 +6,15 @@ class Solution:
 
         # Better Solution:
         # Use two pointer
-        # Start from the left side, check the number
+        # Check if the sum of the two number of those pointer is:
+        # 1) Bigger than the target -> this means that we could decrease the sum by decrement rightPointer by 1 (like there is no otherway, if we move the leftPointer by one, it will make the sum bigger right)
+        # 2) Smaller than the target -> This means that we could increase the sum by increment leftPointer by one
+        # Same with the target, then return those indices
 
-        # [1,2,3,4,5,6,7]
-        # target = 8
-        # 1,7
-        # 2,6
-        # 3,5
+        # Example
         # target = 18
         # [2,7,8,11,15]
-        # [1,4]
-        #     - while loop until the leftPointer > rightPointer
-        #     - check if the sum of both is equals target then return their index
-        #     - check if the sum of both is more than the target
-        #         - if yes then reduce the right pointer by one
-        #         - check it again, until the sum of both is less than the target then quit and add the left pointer by one
+        # Answer should be indices [1,4] (don't forget that the problem wants the index to starts from 1, not 0)
 
         leftPointer = 0
         rightPointer = len(numbers) - 1
