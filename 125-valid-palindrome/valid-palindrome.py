@@ -8,6 +8,7 @@ class Solution:
 
         # Better solution:
         # Like the bruteforce solution but instead of converting first, we could directly loop through the original, and check first if the character is alphanum or not, if not then just skip it
+        # This way, the space complexity become constant O(1)
         
         # Use two pointer
         leftPointer = 0
